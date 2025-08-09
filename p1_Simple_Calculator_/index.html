@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./script.js"></script>
+    <h2>Functional Calculator</h2>
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number"><br>
+<select id="operation">
+<option value="add">Add (+)</option>
+<option value="subtract">Subtract (-)</option>
+<option value="multiply">Multiply (×)</option>
+<option value="divide">Divide (÷)</option>
+</select>
+<button onclick="calculate()">Calculate</button>
+<div id="result">Result: </div>
+<script>
+function calculate() {
+const num1 = parseFloat(document.getElementById("num1").value);
+const num2 = parseFloat(document.getElementById("num2").value);
+const operation = document.getElementById("operation").value;
+document.getElementById("result").innerText = "Result: " + result;
+}
+</script>
+</body>
+</html>
